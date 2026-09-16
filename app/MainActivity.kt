@@ -29,14 +29,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PemesananTiketTheme {
-                TicketOrderScreen()
+                HalamanPesanTiket()
             }
         }
     }
 }
 
 @Composable
-fun TicketOrderScreen() {
+fun HalamanPesanTiket() {
     val context = LocalContext.current
     val hargaTiket = 50000
     var jumlahTiket by remember { mutableStateOf(1) }
